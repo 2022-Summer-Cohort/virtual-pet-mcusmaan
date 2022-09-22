@@ -4,24 +4,28 @@ public abstract class RoboticPet extends VirtualPet {
     protected int oilLevel;
     protected int maintenanceLevel;
 
+
+
     public int getOilLevel() {
         return oilLevel;
     }
 
-    public int getmaintenanceLevel() {
+    public int getMaintenanceLevel() {
         return maintenanceLevel;
     }
 
-    public RoboticPet(String name, int oilLevel, int maintenanceLevel) {
-        super(name,oilLevel,maintenanceLevel,boredemLevel,hungerLevel);
+    public RoboticPet(String petName, int oilLevel, int maintenanceLevel){
+        super(petName);
         this.oilLevel = oilLevel;
         this.maintenanceLevel = maintenanceLevel;
     }
-        public void maintainRobots(){
-            maintenanceLevel = 5;
 
+    public void MaintainRobots() {
+        maintenanceLevel = 1;
     }
-    public void oilRobots(){
-        oilLevel = 5;
+
+    public void oilRobots() {
+        oilLevel = 3;
     }
+
 }
